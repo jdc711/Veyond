@@ -51,7 +51,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "ng build --base-href ./ && electron-builder"
   },
   "private": true,
   "dependencies": {
