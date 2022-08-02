@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "description": "hello",
-  
   "build": {
     "appId": "yourappid",
     "asar": false,
-    "files": ["**/*", "dist/**/*"],
-    
+    "files": [
+      "**/*",
+      "dist/**/*"
+    ],
     "dmg": {
       "contents": [
         {
@@ -32,16 +33,19 @@
     "win": {
       "target": "nsis"
     },
-    "protocols": [{
-      "name": "vymv",
-      "schemes": [ "vymv" ]
-    }],
+    "protocols": [
+      {
+        "name": "vymv",
+        "schemes": [
+          "vymv"
+        ]
+      }
+    ],
     "nsis": {
       "oneClick": false,
       "perMachine": true,
       "allowToChangeInstallationDirectory": true,
       "include": "build/installer.nsh"
-      
     }
   },
   "scripts": {
@@ -65,7 +69,8 @@
     "@angular/router": "^14.1.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "url-parse": "^1.5.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.0",
@@ -81,6 +86,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
+   
   },
   "author": "josh",
   "license": "ISC"
